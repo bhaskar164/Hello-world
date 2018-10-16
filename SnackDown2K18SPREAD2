@@ -1,0 +1,46 @@
+#include<bits/stdc++.h>
+ 
+using namespace std;
+ 
+int main() {
+int t;
+ 
+cin>>t;
+while(t--)
+{
+    int n;
+    scanf("%d",&n);
+    long int a[n],d=0,know=1,countp=0;
+    for(int i=0;i<n;i++){
+        
+        scanf("%li",&a[i]);
+        
+        
+    }
+      
+      while(n>know){ 
+       ++d;
+       
+     if(d==1)
+      know+=a[0];
+     
+      else{
+      countp=0;
+       for(int j=0;j<know;j++){
+       
+       countp +=a[j];
+       
+       }
+               
+       know+=countp;
+    
+        
+       }
+    
+      }
+      
+        printf("%li\n",d);
+            
+}
+ 
+}
